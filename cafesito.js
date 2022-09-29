@@ -30,8 +30,9 @@ let cafetera = {
         console.log('nivel de agua', this.nivelAgua - agua)
         console.log('cafe restante', this.cafeRestante - cafe)
         console.log('azucar restante', this.azucarRestante - azucar)
-        if (conLeche) agregarLeche()
         if (conLeche) console.log('leche restante', this.leche - 1)
+        if (conLeche === false) console.log('leche restante', this.leche)
+        if (conLeche) agregarLeche()
         let indicador1 = 'sin'
         if (conLeche) indicador1 = 'con'
         return 'cafesito ' + indicador1 + ' leche y ' + azucar + ' porcion de azucar y ' + agua + ' ml de agua'
