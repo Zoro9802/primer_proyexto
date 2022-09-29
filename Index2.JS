@@ -3,7 +3,7 @@
 //     return (a + b)
 // }
 
-// console.log suma (2, 3)
+// console.log (suma (2, 3))
 
 // let resultado = suma (2, 3)
 
@@ -25,3 +25,19 @@
 // console.log (multipli(2,3))
 
 // console.log (multipli(3,6))
+
+//objetos
+
+let user = {
+    name: "carlos",
+    age: 200,
+    Direccion {
+        cra: 69c
+        calle: 32c
+        numero: 76
+    }
+    sayhi: function ()
+    console.log ('hi')
+}
+
+console.log(user.name)
