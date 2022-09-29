@@ -25,10 +25,10 @@ let cafetera = {
             console.log('hechando leche')
         }
         agregarAgua(agua)
-        console.log('nivel de agua', this.nivelAgua - agua)
         agregarCafe(cafe)
-        console.log('cafe restante', this.cafeRestante - cafe)
         agregarAzucar(azucar)
+        console.log('nivel de agua', this.nivelAgua - agua)
+        console.log('cafe restante', this.cafeRestante - cafe)
         console.log('azucar restante', this.azucarRestante - azucar)
         if (conLeche) agregarLeche()
         if (conLeche) console.log('leche restante', this.leche - 1)
