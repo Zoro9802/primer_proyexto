@@ -35,20 +35,26 @@ let cafetera = {
         if (conLeche) agregarLeche()
         let indicador1 = 'sin'
         if (conLeche) indicador1 = 'con'
-        return 'cafesito ' + indicador1 + ' leche y ' + azucar + ' porcion de azucar y ' + agua + ' ml de agua'
+        let indicador2 = 'claro'
+        if (cafe === 2) indicador2 = 'medio'
+        if (cafe === 3) indicador2 = 'oscuro'
+        return 'cafesito ' + indicador2 + ' ' + indicador1 + ' leche y ' + azucar + ' porcion de azucar y ' + agua + ' ml de agua'
 
     }
 }
-let resultado = cafetera.Prepararuncafesito(1, 250, 1, false)
+let resultado = cafetera.Prepararuncafesito(3, 250, 3, false)
 console.log(resultado)
 
 function crearCafetera(elAgua, elCafe, elAzucar, laLeche) {
     console.log('cafetera')
+
     return {
         nivelAgua: elAgua,
         cafeRestante: elCafe,
         azucarRestamte: elAzucar,
         leche: laLeche,
     }
+
 }
-console.log(crearCafetera(1000, 10, 10, 10))
+
+console.table(crearCafetera(2500, 15, 15, 15))
